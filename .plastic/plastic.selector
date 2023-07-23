@@ -1,0 +1,4 @@
+repository "Game design@oujiawei@cloud.cn"
+  path "/"
+    smartbranch "/main" 
+     
