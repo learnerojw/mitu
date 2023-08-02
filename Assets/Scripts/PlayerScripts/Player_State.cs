@@ -8,4 +8,6 @@ public class Player_State :MonoBehaviour
 
     public float maxHp;
     public float currentHp;
+
+    public Vector3 respawnPoint;
 }

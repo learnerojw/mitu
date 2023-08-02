@@ -12,12 +12,12 @@ public class Entrance : MonoBehaviour
         {
             ScenesMgr.GetInstance().LoadSceneAsyn(sceneName, () =>
             {
-                GameObject playerObj = ResManager.instance.Load<GameObject>("Prefab/Player");
-                playerObj.transform.position = new Vector3(-8, -4, 0);
+                GameObject playerObj = other.gameObject;
+                playerObj.transform.position = new Vector3(-12, 6, 0);
 
                 ResManager.instance.Load<GameObject>("Camera/Main Camera").transform.position = playerObj.transform.position;
                 ResManager.instance.Load<GameObject>("Camera/CM vcam1").transform.position = playerObj.transform.position;
-                ResManager.instance.Load<GameObject>("Prefab/Canvas");
+                //ResManager.instance.Load<GameObject>("Prefab/Canvas");
             });
         }
     }
